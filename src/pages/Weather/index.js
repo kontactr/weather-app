@@ -1,6 +1,6 @@
 import WeatherDetails from "components/WeatherDetails";
 import WeatherCard from "components/WeatherCard";
-import css from "./weather.module.css";
+import css from "./Weather.module.css";
 
 export default function WeatherPage() {
   return (

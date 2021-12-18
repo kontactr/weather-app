@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { weatherCloud, weatherSun } from "assets/images";
+import { weatherCloud } from "assets/images";
 import css from "./weatherDetails.module.css";
 
 export default function WeatherDetails() {
@@ -8,7 +8,7 @@ export default function WeatherDetails() {
       <article
         className={classNames(css.topDetailsItems, css.weatherLogoContainer)}
       >
-        <img src={weatherCloud} />
+        <img src={weatherCloud} alt="cloud" />
       </article>
       <section className={classNames(css.topDetailsItems, css.infoContainer)}>
         <article className={classNames(css.topInfo)}>

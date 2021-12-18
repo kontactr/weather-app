@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { weatherCloud, weatherSun } from "assets/images";
+import { weatherSun } from "assets/images";
 import css from "./weatherCard.module.css";
 
 export default function WeatherCard(props) {
@@ -9,7 +9,7 @@ export default function WeatherCard(props) {
         14:00
       </span>
       <span className={classNames(css.itemContainer, css.weatherLogoContainer)}>
-        <img src={weatherSun} />
+        <img src={weatherSun} alt="sun" />
       </span>
       <span className={classNames(css.itemContainer, css.temperatureContainer)}>
         12°
