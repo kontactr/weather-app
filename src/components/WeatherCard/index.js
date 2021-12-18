@@ -1,18 +1,34 @@
 import classNames from "classnames";
-import { weatherSun } from "assets/images";
+import images, { getImageKey } from "assets/images";
 import css from "./weatherCard.module.css";
 
 export default function WeatherCard(props) {
+  const { weather, onWeatherSelect } = props;
+  const { temperature, parsedDate, weatherImageCode } = weather || {};
+  const { minutes, hours } = parsedDate || {};
+
+  const imageKey = getImageKey(weatherImageCode);
+  const weatherImage = images[imageKey];
+
   return (
-    <article className={css.weatherCardContainer}>
+    <article
+      className={css.weatherCardContainer}
+      onClick={() => {
+        onWeatherSelect && onWeatherSelect(weather);
+      }}
+    >
       <span className={classNames(css.itemContainer, css.timeContainer)}>
-        14:00
+        {hours}:{minutes}
       </span>
       <span className={classNames(css.itemContainer, css.weatherLogoContainer)}>
-        <img src={weatherSun} alt="sun" />
+        <img
+          src={weatherImage.image}
+          alt={weatherImage.alt}
+          className={css.weatherImage}
+        />
       </span>
       <span className={classNames(css.itemContainer, css.temperatureContainer)}>
-        12°
+        {temperature}
       </span>
     </article>
   );

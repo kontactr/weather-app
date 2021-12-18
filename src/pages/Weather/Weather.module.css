@@ -23,7 +23,8 @@
   height: 90%;
 }
 
-.weatherCardContainer:hover {
+.weatherCardContainer:hover,
+.selectedWeatherCard {
   background: var(--cardHoverColor);
   cursor: pointer;
 }

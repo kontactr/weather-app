@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .topDetailsItems {
@@ -17,9 +16,19 @@
   justify-content: center;
 }
 
+.weatherLogo {
+  height: 100%;
+  width: 100%;
+}
+
 .infoContainer {
   display: flex;
   flex-direction: column;
+}
+
+.topDetailsItems:not(:first-child):not(:last-child) {
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .topInfo {
@@ -52,7 +61,7 @@
 .currentDay div {
   display: flex;
   align-items: center;
-  font-size: 4.2rem;
+  font-size: 3.5rem;
 }
 
 @media screen and (max-width: 800px), screen and (max-height: 650px) {
@@ -71,6 +80,6 @@
   }
 
   .currentDay div {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }
