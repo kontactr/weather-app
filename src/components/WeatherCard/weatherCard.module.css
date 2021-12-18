@@ -26,6 +26,11 @@
   height: 35.71%;
 }
 
+.weatherImage {
+  height: 100%;
+  width: 100%;
+}
+
 .temperatureContainer {
   height: 28.57%;
   color: var(--infoFontcolor);
