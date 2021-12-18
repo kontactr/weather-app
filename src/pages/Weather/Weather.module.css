@@ -1,3 +1,29 @@
-.sample {
-  color: blue;
+.displayContainer {
+  margin: 8vh auto 0;
+  height: 31vh;
+  width: 84vw;
+  position: relative;
+}
+
+.weatherPanel {
+  width: 100%;
+  margin: auto;
+  margin-top: 14vh;
+  height: 37vh;
+  display: flex;
+  justify-items: center;
+  overflow: scroll;
+}
+
+.weatherCardContainer {
+  margin: auto;
+  min-width: 100px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 90%;
+}
+
+.weatherCardContainer:hover {
+  background: var(--cardHoverColor);
+  cursor: pointer;
 }
