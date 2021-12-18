@@ -1,0 +1,33 @@
+.weatherCardContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.timeContainer {
+  height: 16.67%;
+  color: var(--headerFontColor);
+  font-size: 1.5em;
+}
+
+.weatherLogoContainer {
+  margin-top: max(10%, 32px);
+  margin-bottom: max(10%, 32px);
+  height: 35.71%;
+}
+
+.temperatureContainer {
+  height: 28.57%;
+  color: var(--infoFontcolor);
+  font-size: 3em;
+}

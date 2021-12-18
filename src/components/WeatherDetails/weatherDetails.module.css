@@ -1,0 +1,76 @@
+.topDetailsContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topDetailsItems {
+  height: 100%;
+  width: 27.5%;
+}
+
+.weatherLogoContainer {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topInfo {
+  height: 16.27%;
+  width: 100%;
+  color: var(--headerFontColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin-bottom: 32px;
+}
+
+.currentTemperature,
+.currentDay {
+  color: var(--infoFontcolor);
+  width: 100%;
+  height: 74.41%;
+}
+
+.currentTemperature span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.currentDay div {
+  display: flex;
+  align-items: center;
+  font-size: 4.2rem;
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
+  .topInfo {
+    font-size: 1.2rem;
+  }
+
+  .currentTemperature span {
+    font-size: 4rem;
+  }
+
+  .currentDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .currentDay div {
+    font-size: 2.5rem;
+  }
+}
