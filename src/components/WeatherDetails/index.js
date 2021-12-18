@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { weatherCloud, weatherSun } from "assets/images";
+import { weatherCloud } from "assets/images";
 import css from "./weatherDetails.module.css";
 
 export default function WeatherDetails() {
