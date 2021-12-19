@@ -1,15 +1,18 @@
 import ReactLoader from "react-loader-spinner";
+import { UI_MESSAGES } from "config/constants";
 import css from "./loader.module.css";
 
-export default function Loader() {
+export default function Loader(props) {
+  const { type, color, height, width } = props;
   return (
-    <section className={css.loaderClassContainer}>
+    <article className={css.loaderContainer}>
       <ReactLoader
-        type={"BallTriangle"}
-        color={"#ffc700"}
-        height={200}
-        width={200}
+        type={type || "BallTriangle"}
+        color={color || "#ffc700"}
+        height={height || 200}
+        width={width || 200}
       />
-    </section>
+      <div className={css.loadingTextColor}>{UI_MESSAGES.LOADING}</div>
+    </article>
   );
 }

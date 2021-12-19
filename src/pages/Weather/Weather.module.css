@@ -1,3 +1,11 @@
+.otherStateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .displayContainer {
   margin: 8vh auto 0;
   height: 31vh;
