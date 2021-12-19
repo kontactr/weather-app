@@ -1,7 +1,13 @@
-.loaderClassContainer {
+.loaderContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+}
+
+.loadingTextColor {
+  margin-top: 25px;
+  font-size: 2em;
+  color: var(--sunColor);
+  letter-spacing: 5px;
 }

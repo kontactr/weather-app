@@ -1,5 +1,6 @@
 import weatherCloud from "./weather-cloud.svg";
 import weatherSun from "./weather-sun.svg";
+import noData from "./no-data.png";
 
 import weatherCloudFavIcon from "./weather-cloud.ico";
 import weatherSunFavIcon from "./weather-sun.ico";
@@ -15,6 +16,12 @@ const images = {
     image: weatherSun,
     alt: "weather-full-sun-image",
     favIcon: weatherSunFavIcon,
+  },
+
+  noData: {
+    image: noData,
+    alt: "no-data",
+    favIcon: null,
   },
 };
 

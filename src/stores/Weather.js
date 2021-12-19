@@ -1,7 +1,8 @@
 import { API_ROUTES } from "config/constants";
 import { observable, action, makeObservable } from "mobx";
 import api from "utils/api";
-import { convertTempFromKelToCel, formatDate } from "utils";
+import { convertTempFromKelToCel, formatDate, showToastMessage } from "utils";
+import { TOAST_TYPES, UI_MESSAGES } from "config/constants";
 
 export default class WeatherStore {
   @observable weatherLoading = false;
@@ -54,7 +55,10 @@ export default class WeatherStore {
       }
       this.city = response.data?.city || {};
     } catch (error) {
-      this.weathers = [];
+      if (!(this.weathers && this.weathers.length)) {
+        this.weathers = [];
+      }
+      showToastMessage(TOAST_TYPES.ERROR, UI_MESSAGES.FAILED_TO_LOAD_WEATHERS);
     } finally {
       this.weatherLoading = false;
     }

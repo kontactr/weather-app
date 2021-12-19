@@ -1,0 +1,23 @@
+.fullPage {
+  height: 100vh;
+}
+
+.errorBoundaryContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.errorText {
+  font-size: 2em;
+  color: var(--sunColor);
+}
+
+.errorToDoText {
+  margin-top: 10px;
+  color: var(--infoFontcolor);
+  font-weight: 200;
+}

@@ -1,0 +1,21 @@
+.noDataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noDataText {
+  margin-top: 25px;
+  font-size: 2em;
+  color: var(--sunColor);
+}
+
+.creditSection {
+  margin-top: 10px;
+  color: var(--greyColor);
+}
+.creditSection a {
+  color: var(--infoFontcolor);
+  text-decoration: none;
+}
