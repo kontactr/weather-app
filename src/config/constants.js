@@ -23,8 +23,11 @@ export const UI_MESSAGES = {
   LOADING: "Loading...",
   SOMETHING_WENT_WRONG: "Something went wrong.",
   TRY_LATER_OR_REFRESH: "Please try again later or refresh the page.",
+  SHOWING_PREVIOUS_DATA: "Showing previously loaded data.",
 };
 
 export const LOCAL_STORAGE_KEYS = {
   WEATHERS_DATA: "weathers",
+  CURRENT_WEATHER_DATA: "currentWeather",
+  CITY: "city",
 };
