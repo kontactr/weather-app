@@ -1,10 +1,22 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4c2901e6-6cd0-4d03-9fc4-d9e2e9e4da02/deploy-status)](https://app.netlify.com/sites/yg-weather-assignment/deploys)
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project is also customized using [customize-cra](https://www.npmjs.com/package/customize-cra) and [react-app-rewired](https://www.npmjs.com/package/react-app-rewired) to use [mobx-decorators](https://mobx.js.org/enabling-decorators.html) and [optional-chainings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
+This project is a single page application, and it uses OpenWeatherMap API to show weather data. 
+
+# Note
+
+This project uses [CORS proxy server](https://secret-ocean-49799.herokuapp.com) to access openWeatherMap apis. It is hosted on heroku and it's a third party server.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn` or `yarn install`
+
+This command installs all the required dependencies to run this project.
 
 ### `yarn start`
 
@@ -13,11 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
@@ -29,42 +36,26 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `Deployment`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project is hosted on Netlify's environment with the build pipeline of the main branch. \
+You can visit [here](https://yg-weather-assignment.netlify.app/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# How To & References
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `How To`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Users have to just load or open the website to show the weather data.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Third-Party packages`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [axios](https://www.npmjs.com/package/axios) - For api calling
+- [mobx](https://www.npmjs.com/package/mobx) & [mobx-react](https://www.npmjs.com/package/mobx-react) - For state management.
+- [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - For loading screen
+- [react-toastify](https://www.npmjs.com/package/react-toastify) - To show toast messages.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `Readme Editor`
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Markdown Editor](https://jbt.github.io/markdown-editor/) - This readme is built using this editor.
